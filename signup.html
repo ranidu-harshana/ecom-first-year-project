@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SignUp Page</title>
+        <link rel="stylesheet" href="bs\css\bootstrap.css">
+        <script src="https://kit.fontawesome.com/a6c8896658.js" crossorigin="anonymous"></script>
+        <style media="screen">
+            body{
+                padding:40px 0;
+            }
+
+            .input-group-addon{
+                padding: 10px 12px 10px 12px;
+                color:black;
+                background-color: #ffffff;
+                border:none
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-10 col-10 mt-4"  style="padding:0 30px 0 30pxborder:1px solid; background-color:#e3e3e3">
+                    <form>
+                        <h2 style="text-align:center;margin-top:15px">Welcome</h2>
+                        <label class="mt-3" for="fname">First Name</label>
+                        <div class="input-group" style="border: 1px solid;border-radius:2px;margin-top:10px">
+                            <input class="form-control" autocomplete="off" required placeholder="Ex: John" autocomplete="off" required type="text" name="fname" style="border:none;">
+                            <span class="input-group-addon" style=" border-radius:0px 4px 4px 0px">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+
+                        <label class="mt-3" for="lname">Last Name</label>
+                        <div class="input-group" style="border: 1px solid;border-radius:2px;margin-top:10px">
+                            <input class="form-control" autocomplete="off" required placeholder="Ex: David" id="password" name="lname" type="text" style="border:none;">
+                            <span class="input-group-addon" style=" border-radius:0px 4px 4px 0px">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+
+                        <label class="mt-3" for="email">Email Address</label>
+                        <div class="input-group" style="border: 1px solid;border-radius:2px;margin-top:10px">
+                            <input class="form-control" autocomplete="off" required placeholder="Ex: example@gmail.com" id="password" name="email" type="email" style="border:none;">
+                            <span class="input-group-addon" style=" border-radius:0px 4px 4px 0px">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+
+                        <label class="mt-3" for="password">Password</label>
+                        <div class="input-group" style="border: 1px solid;border-radius:2px;margin-top:10px">
+                            <input class="form-control" type="password" autocomplete="off" required  onkeyup="passwordValidate()" name="password" id="pass" style="border:none;">
+                            <span class="input-group-addon" onclick="seePassword(1)" style=" border-radius:0px 4px 4px 0px">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                        <div id="pass_check" style="display:none" class="mt-1">
+                            <p style="display:block">
+                                <span style="display:inline;color: green"><i id="inc_char12_0" style="display:none;" class="fas fa-check-circle"></i></span>
+                                <span style="display:inline;color: red"><i id="inc_char12_1" style="display:inline;" class="fas fa-times-circle"></i></span> Length must be minimum 12 characters
+                            </p>
+                            <p style="display:block;">
+                                <span style="display:inline;color: green"><i id="inc_onenumber_0" style="display:none;" class="fas fa-check-circle"></i></span>
+                                <span style="display:inline;color: red"><i id="inc_onenumber_1" style="display:inline;" class="fas fa-times-circle"></i></span> At least include one number
+                            </p>
+                            <p  style="display:block;">
+                                <span style="display:inline;color: green"><i id="inc_charsp_0" style="display:none;" class="fas fa-check-circle"></i></span>
+                                <span style="display:inline;color: red"><i id="inc_charsp_1" style="display:inline;" class="fas fa-times-circle"></i></span> At least include one Special character
+                            </p>
+                            <p style="display:block;">
+                                <span style="display:inline;color: green"><i id="inc_lowercase_0" style="display:none;" class="fas fa-check-circle"></i></span>
+                                <span style="display:inline;color: red"><i id="inc_lowercase_1" style="display:inline;" class="fas fa-times-circle"></i></span> At least include one Lowercase letter
+                            </p>
+                            <p style="display:block;">
+                                <span style="display:inline;color: green"><i id="inc_uppercase_0" style="display:none;" class="fas fa-check-circle"></i></span>
+                                <span style="display:inline;color: red"><i id="inc_uppercase_1" style="display:inline;" class="fas fa-times-circle"></i></span> At least include one Uppercase letter
+                            </p>
+                        </div>
+                        <label class="mt-3" for="password">Confirm Password</label>
+                        <div class="input-group mt-3" style="border: 1px solid;border-radius:2px;margin-top:10px">
+                            <input class="form-control" type="password" autocomplete="off" required  onkeyup="matchPasswords()" name="cpassword" id="cpass" style="border:none;">
+                            <span id="span" class="input-group-addon" onclick="seePassword(1)" style=" border-radius:0px 4px 4px 0px">
+                                <i id="icon" class="fas fa-eye-slash"></i>
+                            </span>
+                        </div>
+                        <div class="mt-1">
+                            <p id="match" style="display:none;"><span style="color: green"><i class="fas fa-check-circle"></i></span> Password Matched</p>
+                            <p id="mismatch" style="display:none;color:red"><span style="color: red"><i class="fas fa-times-circle"></i></span> Password Misatched</p>
+                        </div>
+
+                        <div class="input-group mt-3">
+                            <input class="form-control btn btn-primary" type="submit" name="submit" value="Register" style="border:none;">
+                        </div>
+                        <p style="text-align:center;margin-top:5px">Already Have an Account? <a href="login.html">Log In</a></p>
+                        <p style="text-align:center;margin-top:5px"><span><a href="home.html"><i class="fas fa-home fa-2x"></i></a></span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/signup.js"></script>
+    </body>
+</html>

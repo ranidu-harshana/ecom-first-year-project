@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="bs\css\bootstrap.css">
+        <script src="https://kit.fontawesome.com/a6c8896658.js" crossorigin="anonymous"></script>
+        <title>Login Page</title>
+        <style media="screen">
+            body{
+                padding:100px 0;
+            }
+            .input-group-addon{
+                padding: 8px 10px 0px 10px;
+                color:#000;
+                background-color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-12">
+                    <center><img src="img/loginImage.jpg" alt=""></center>
+                </div>
+                <div class="col-sm-4 col-12 mt-4"  style="padding:0 30px 0 30px">
+                    <form>
+                        <h2>Login Form</h2>
+                        <div class="input-group mt-5" style="border-bottom: 1px solid;border-radius:2px;margin-top:10px">
+                            <input class="form-control" placeholder="User Name" autocomplete="off" type="text" name="email" style="border:none;" >
+                            <span class="input-group-addon">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+
+                        <div class="input-group mt-4" style="border-bottom: 1px solid;border-radius:2px;margin-top:10px">
+                            <input class="form-control" placeholder="Password" id="password" name="password" type="password" style="border:none;">
+                            <span id="span" class="input-group-addon" onclick="seePassword(1)" >
+                                <i id="icon" class="fas fa-eye-slash"></i>
+                            </span>
+                        </div>
+
+                        <div class="input-group mt-3">
+                            <input class="form-check-input" type="checkbox" name="c" value=""><label for="c">&nbsp;&nbsp;&nbsp;Remember Me</label>
+                        </div>
+
+                        <div class="input-group mt-3">
+                            <input type="submit" class="btn btn-success mt-3" name="submit" value="Sign In">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="mt-4" href="signup.html">Or Create Account</a>
+                        </div>
+
+                        <div class="mt-5">
+                            Sign in With&nbsp;
+                            <span style="color: #39569c"><i class="fab fa-facebook-square fa-2x"></i></span>&nbsp;
+        					<span style="color: #c95a49"><i class="fab fa-google-plus-square fa-2x"></i></span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="home.html"><i title="Home" class="fas fa-home fa-2x"></i></a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/login.js"></script>
+    </body>
+</html>

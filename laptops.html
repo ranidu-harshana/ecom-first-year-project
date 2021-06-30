@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="https://kit.fontawesome.com/a6c8896658.js" crossorigin="anonymous"></script>
+        <title>Laptops Page</title>
+    </head>
+    <body>
+        <div id="container" class="col-12">
+            <div id = "header1" class="row col-12">
+                <div class="social">
+                    <span style="color: #39569c"><i class="fab fa-facebook-square fa-2x"></i></span>
+					<span style="color: Dodgerblue"><i class="fab fa-twitter-square fa-2x"></i></span>
+					<span style="color: #445c8f"><i class="fab fa-instagram-square fa-2x"></i></span>
+					<span style="color: #c95a49"><i class="fab fa-google-plus-square fa-2x"></i></span>
+					<span style="color: #0072b1"><i class="fab fa-linkedin fa-2x"></i></span>
+                </div>
+
+                <div class="header-links">
+                    <ul>
+                        <li><a href="userpage.html">My Account</a> | </li>
+                        <li><a href="cart.html">My Cart</a> | </li>
+                        <li><a href="login.html">Login</a> | </li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="logo" class="col-12">
+                <h1><a href="home.html">CompanyName</a></h1>
+            </div>
+
+            <div class="links col-12">
+                <ul>
+                    <li class="item"><a href="home.html" class="itmtitle">Home</a></li>
+                    <li class="item">
+                        <a href="laptops.html" class="itmtitle" id="active">Laptops</a>
+                        <div class="item-content">
+                          <a href="#">Asus</a>
+                          <a href="#">Acer</a>
+                          <a href="#">HP</a>
+                          <a href="#">Dell</a>
+                          <a href="#">Lenovo</a>
+                          <a href="#">MSI</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="#" class="itmtitle">Dekstops</a></li>
+                    <li class="item"><a href="#mobtab" class="itmtitle">Mobile Phones</a>
+                        <div class="item-content">
+                          <a href="#">Huawei</a>
+                          <a href="#">Samsung</a>
+                          <a href="#">Nokia</a>
+                          <a href="#">Oppo</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="#" class="itmtitle">Tablets</a>
+                        <div class="item-content">
+                          <a href="#">Huawei</a>
+                          <a href="#">Samsung</a>
+                          <a href="#">Lenovo</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="#" class="itmtitle">Accessories</a>
+                        <div class="item-content">
+                          <a href="#">RAM</a>
+                          <a href="#">Hard Disk</a>
+                          <a href="#">Mouse</a>
+                          <a href="#">Key Board</a>
+                          <a href="#">Speakers</a>
+                          <a href="#">UPS</a>
+                        </div>
+                    </li>
+                    <li class="item"><a href="#" class="itmtitle">Services</a></li>
+                    <li class="itemToggler"><a href="#" class="itmtitleToggler"><span style="color:#000"><i class="fas fa-bars"></i></span> </a>
+                        <div class="item-contentToggler">
+                          <a href="laptops.html">Laptops</a>
+                          <a href="#">Dekstops</a>
+                          <a href="#">Mobile Phones</a>
+                          <a href="#">Tablets</a>
+                          <a href="#">Accessories</a>
+                          <a href="#">Services</a>
+                          <input type="text" placeholder="Search" name="search" value="" style="margin: 8px 0px 8px 10px;padding:5px 5px 5px 5px"><input class="searchbtn" type="submit" name="submit" value="Search"></a>
+                        </div>
+                    </li>
+                    <li id="nav-search" style="float:right;"><input type="text" placeholder="Search" name="search" value="" style="margin-top: 8px;padding:5px 5px 5px 5px"><input class="searchbtn" type="submit" name="submit" value="Search"></li>
+                    <li id="nav-home" style="float:right" class="item"><a href="home.html" class="itmtitle">Home</a></li>
+                </ul>
+            </div>
+            <div class="row col-12" style="height:100%;">
+                <div class="filters col-2" style="height:100%;">
+                    <h3>Laptop Categories</h3><br>
+                    <p><input type="checkbox" name="asus" value="asus">&nbsp;Asus</p>
+                    <p><input type="checkbox" name="acer" value="acer">&nbsp;Acer</p>
+                    <p><input type="checkbox" name="msi" value="msi">&nbsp;MSI</p>
+                    <p><input type="checkbox" name="toshiba" value="toshiba">&nbsp;Toshiba</p>
+                    <img class="col-12 all-image" src="img/all.jpg" alt="" style="margin-top:20px;">
+                </div>
+                <div class="col-10 laptops-images" style="align-content:center;border:1px solid #aaa">
+                    <div class="row col-12">
+                        <div class="col-2 col-s-3 images-cards">
+                            <div class="col-12">
+                                <img id="L001" src="img/L001.jpg" width="100%" alt="">
+                                <h4 class="">ASUS</h4>
+                                <p class="">ASUS Laptop | X515 Silver | Celeron | Up To 2.8 Ghz | 4GB RAM | 1TB HDD<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('L001')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 col-s-3 images-cards">
+                            <div class="col-12">
+                                <img id="L002" src="img/L002.jpg" width="100%" alt="">
+                                <h4 class="">Asus</h4>
+                                <p class="">CORE-i5 | 10th Gen | 8GB RAM | FingerPrint Sensor<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('L002')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 col-s-3 images-cards">
+                            <div class="col-12">
+                                <img id="L003" src="img/L003.jpg" width="100%" alt="">
+                                <h4 class="">Dell</h4>
+                                <p class="">Dell | 515 11th Gen | Core i7 | Silver<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('L003')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 col-s-3 images-cards">
+                            <div class="col-12">
+                                <img id="L004" src="img/L004.jpg" width="100%" alt="">
+                                <h4 class="">HP</h4>
+                                <p class="">HP Notebook Intel i5 | 10TH Gen | 4GB Ram | 1TB HDD | 15.6 | WIN 10<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('L004')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 col-s-6 images-cards">
+                            <div class="col-12">
+                                <img id="L005" src="img/L005.jpg" width="100%" alt="">
+                                <h4 class="">Toshiba</h4>
+                                <p class="">Toshiba IP S145-15IIL Intel I3 | 4GB Ram | 1TB HDD | WIN10 - Platinum Grey<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('L005')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 col-s-6 images-cards">
+                            <div class="col-12">
+                                <img id="ACER004" src="img/ACER004.jfif" width="100%" alt="">
+                                <h4 class="">Acer</h4>
+                                <p class="">Acer Spin5 | Intel Core i5 | 8GB | 512SSD | IRIS2GBVGA | WIN 10<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('ACER004')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row col-12 laptops-images">
+                        <div class="col-2 images-cards">
+                            <div class="col-12">
+                                <img id="ASUS001" src="img/ASUS001.jfif" width="100%" alt="">
+                                <h4 class="">ASUS</h4>
+                                <p class="">ASUS Laptop | X515 Silver | Celeron | Up To 2.8 Ghz | 4GB RAM | 1TB HDD<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('ASUS001')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 images-cards">
+                            <div class="col-12">
+                                <img id="ACER001" src="img/ACER001.jfif" width="100%" alt="">
+                                <h4 class="">Asus</h4>
+                                <p class="">CORE-i5 | 10th Gen | 8GB RAM | FingerPrint Sensor<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('ACER001')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 images-cards">
+                            <div class="col-12">
+                                <img id="ASUS002" src="img/ASUS002.jfif" width="100%" alt="">
+                                <h4 class="">ASUS</h4>
+                                <p class="">ASUS | 515 11th Gen | Core i7 | Silver<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('ASUS002')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 images-cards">
+                            <div class="col-12">
+                                <img id="ACER002" src="img/ACER002.jfif" width="100%" alt="">
+                                <h4 class="">HP</h4>
+                                <p class="">HP Notebook Intel i5 | 10TH Gen | 4GB Ram | 1TB HDD | 15.6 | WIN 10<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('ACER002')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 images-cards">
+                            <div class="col-12">
+                                <img id="ASUS003" src="img/ASUS003.jfif" width="100%" alt="">
+                                <h4 class="">ASUS</h4>
+                                <p class="">Toshiba IP S145-15IIL Intel I3 | 4GB Ram | 1TB HDD | WIN10 - Platinum Grey<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('ASUS003')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="col-2 images-cards">
+                            <div class="col-12">
+                                <img id="ACER003" src="img/ACER003.jfif" width="100%" alt="">
+                                <h4 class="">Acer</h4>
+                                <p class="">Acer Spin5 | Intel Core i5 | 8GB | 512SSD | IRIS2GBVGA | WIN 10<br><br><span style="color:red">Rs.152 000</span></p>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" onclick="getSource('ACER003')" name="button">Checkout</button>
+                                <button type="button" name="button">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section4 row col-12">
+                <div class="about-us col-3">
+                    <p><b>About Us</b></p><br>
+                    <p style="margin:0px 10px 0px 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="contact-us  col-3">
+                    <p><b>Ask Question</b>s</p><br>
+                    <form class="" action="index.html" method="post">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" placeholder="Ex: Dasun" name="fname" value=""><br>
+                        <label for="sname">Second Name</label><br>
+                        <input type="text" name="sname" placeholder="Ex: Kalhara"><br>
+                        <label for="mnum">Mobile Number</label><br>
+                        <input type="text" name="mnum" placeholder="Ex: 075 265 4895"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" placeholder="Ex: example@gmail.com"><br>
+                        <label for="ques">Question</label>
+                        <textarea name="ques" rows="8" placeholder="Type your Message"></textarea><br>
+                        <input class="btn" type="submit" name="submit" value="Contact Us"><br>
+                    </form>
+                </div>
+                <div class="sub col-3">
+                    <p><b>Contact Us</b></p><br>
+                    <p style="margin:0px 10px 0px 10px;">Mobile : 076 536 9842, 070 256 9452</p>
+                    <p style="margin:0px 10px 0px 10px;">Address : 56, Malwana Rd, Colombo</p><br>
+
+                    <p><b>Follow Us</b></p><br>
+                    <div class="social2">
+                        <a href="#"><span style="color: #39569c;"><i class="fab fa-facebook-square fa-2x"></i></span></a>
+    					<a href="#"><span style="color: Dodgerblue;"><i class="fab fa-twitter-square fa-2x"></i></span></a>
+    					<a href="#"><span style="color: #445c8f"><i class="fab fa-instagram-square fa-2x"></i></span></a>
+    					<a href="#"><span style="color: #c95a49"><i class="fab fa-google-plus-square fa-2x"></i></span></a>
+    					<a href="#"><span style="color: #0072b1"><i class="fab fa-linkedin fa-2x"></i></span></a>
+                    </div>
+                </div>
+
+                <div class="sub col-3">
+                    <p><b>From Youtube</b></p>
+                    <center><video width="90%" height="240" controls>
+                        <source src="videos/videoplayback (10).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                </center>
+                </div>
+            </div>
+
+            <div class="footer row col-12">
+                <p>Copyright &copy; 2021 | All Rights Reserved.</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/home_cart.js"></script>
+    </body>
+</html>
